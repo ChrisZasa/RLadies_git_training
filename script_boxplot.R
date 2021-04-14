@@ -4,7 +4,7 @@
 # library
 library(ggplot2)
 library(dplyr)
-library(hrbrthemes)
+#library(hrbrthemes)
 
 # Start with the diamonds dataset, natively available in R:
 p <- diamonds %>%
@@ -15,5 +15,6 @@ p <- diamonds %>%
   # plot
   ggplot( aes(x=bin, y=price) ) +
     geom_boxplot(fill="#69b3a2") +
-    theme_ipsum() +
+    #theme_ipsum() +
+    theme_classic() +
     xlab("Carat")
